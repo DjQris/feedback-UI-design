@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+    letter-spacing: -0.25px;
+}
+
+.desktop{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 1.5rem;
+}
+
+.top-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.icon-container{
+    width: 48px;
+    height: 48px;
+}
+
+.heading-and-body-text-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.add-team-members-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.add-team-members-container h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(220.99deg 41.69% 11.07%);
+}
+
+.body-text-container{
+    width: 100%;
+    height: auto;
+}
+
+.body-text-container p{
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: hsl(219.99deg 10.27% 46.3%);
+    text-align: center;
+}
+
+.input-and-button{
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.input-and-button input{
+    width: 74%;
+    height: 2.25rem;
+    padding: 0.375rem 0.75rem;
+    outline: none;
+    border: none;
+    border: 1px solid hsl(215.88deg 13.18% 84.01%);
+    border-radius: 0.375rem;
+}
+
+.input-and-button input:focus {
+  border: 2px solid hsl(246.99deg 91.7% 59.55%);
+  outline: none;
+  box-shadow: 0 0 0 3px hsl(246.99deg 91.7% 80% / 0.5);
+}
+
+
+.input-and-button input::placeholder{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: hsla(220, 10%, 46%, 0.43);
+}
+
+.input-and-button button{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 0.75rem;
+    background-color: hsl(246.99deg 91.7% 59.55%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.input-and-button button:hover{
+    background-color: hsl(247, 94%, 63%);
+}
+
+.bottom-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.team-members-heading-container{
+    width: 100%;
+    height: auto;
+}
+
+.team-members-heading-container p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: hsl(219.99deg 10.27% 46.3%);
+}
+
+.team-members-profile-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* row-gap: 1.5rem; */
+}
+
+.members-profile-invite-container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    border-top: 1px solid hsl(344.79deg 11.54% 91.05%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.members-profile-invite-container:last-child{
+border-bottom: 1px solid hsl(344.79deg 11.54% 91.05%);
+}
+
+.profile-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 0.5rem;
+
+}
+
+.avatar-and-profile-name-group{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.avatar-container{
+    width: fit-content;
+    height: auto;
+    border-radius: 100rem;
+}
+
+.avatar-container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    object-fit: cover;
+}
+
+.name-and-role-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* row-gap: 0.125rem; */
+}
+
+.name-and-role-container h3{
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 500;
+    color: hsl(220.99deg 41.69% 11.07%);
+}
+
+.name-and-role-container p{
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 500;
+    color: hsl(219.99deg 10.27% 46.3%);
+}
+
+.invite-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 0.5rem;
+}
+
+.add-icon-container{
+    width: 20px;
+    height: 20px;
+}
+
+.add-icon-container span{
+    font-size: 20px;
+    color: hsl(217.85deg 11.94% 64.27%);
+}
+
+a{
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(220.99deg 41.69% 11.07%);
+}
